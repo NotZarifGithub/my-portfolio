@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+// FONT
+
+$font-main: 'Roboto Mono', monospace;
+
+// COLOR
+
+$color-main:#847A84;
+$color-secondary:#463A41;
+$color-tertiary:#A299A4;
+$color-background:#1C1116;
+
+// GENERAL
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $color-background;
+    color: $color-main;
+}
+
+// HEADER
+
+.header {
+    // MAIN CONTENT
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+        // LOGO
+
+        .logo {
+            cursor: pointer;
+
+            h1 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 10px 0;
+            }
+        }
+
+        // NAVBAR
+
+        .navbar {
+            ul {
+                width: 700px;
+                justify-content: space-evenly;
+                list-style-type: none;
+                padding: 10px 0;
+
+                li {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        color: $color-tertiary;
+                    }
+                }
+
+                a {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: $color-main;
+                    text-decoration: none;
+                    transition: 0.2s;
+
+                    // LINK HOVER
+
+                    &:hover {
+                        color: $color-tertiary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// UTILITIES
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
